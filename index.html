@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Netflix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo">
+            <img src="img/Netflix-Symbol.png" alt="">
+        </div>
+        <div class="user">
+            <img src="img/Netflix-avatar.png" alt="User">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Disfruta donde quieras. Cancela cuando quieras.</h1>
+            <p>Únete a Netflix hoy mismo.</p>
+            <button class="cta-btn">Ver más</button>
+        </div>
+    </section>
+
+    <section class="section" id="slider1">
+        <h2>Lo más popular</h2>
+        <div class="carousel">
+            <div class="carousel-item"><img src="img/obx.webp" alt="Imagen 1"></div>
+            <div class="carousel-item"><img src="img/bb.jpg" alt="Imagen 2"></div>
+            <div class="carousel-item"><img src="img/pkbb.jpg" alt="Imagen 3"></div>
+            <div class="carousel-item"><img src="img/bb.jpg" alt="Imagen 4"></div>
+        </div>
+        <button class="carousel-btn left" onclick="moveCarousel('slider1', 'left')">←</button>
+        <button class="carousel-btn right" onclick="moveCarousel('slider1', 'right')">→</button>
+    </section>
+    
+    <section class="section" id="slider2">
+        <h2>Otros populares</h2>
+        <div class="carousel">
+            <div class="carousel-item"><img src="img/bb.jpg" alt="Imagen 1"></div>
+            <div class="carousel-item"><img src="img/obx.webp" alt="Imagen 2"></div>
+            <div class="carousel-item"><img src="img/bb.jpg" alt="Imagen 3"></div>
+            <div class="carousel-item"><img src="img/obx.webp" alt="Imagen 4"></div>
+        </div>
+        <button class="carousel-btn left" onclick="moveCarousel('slider2', 'left')">←</button>
+        <button class="carousel-btn right" onclick="moveCarousel('slider2', 'right')">→</button>
+    </section>
+    
+    
+    
+
+    <footer>
+        <p>Clon de Netflix | Hecho por Branco Aguirre</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
